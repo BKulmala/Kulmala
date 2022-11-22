@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            var exampleOrders = ["Hamburger and Fries", "Salad", "Drink"];
+            var arrayAccessor = 0;
+            function orderIsDone() {
+                var orderCompleted = exampleOrders[arrayAccessor];
+                exampleOrders.splice(arrayAccessor, 1);
+                if(exampleOrders[arrayAccessor] == orderCompleted){
+                    document.write("Error. Order already finished or misinput.");
+                }
+                else{
+                    document.write(orderCompleted + ' is done');
+                }
+                return 1;   
+            }
+    
+            </script>
+    </head>
+    <body>
+        <p><script>
+            document.write(exampleOrders[arrayAccessor]);
+            const paragraph = document.querySelector('p');
+            const button = document.querySelector('input');
+            function updateOrder(x) {
+                if(x == 1){
+                    if(arrayAccessor >= exampleOrders.length - 1) {
+                        arrayAccessor = 0;
+                        paragraph.textContent = 
+                        exampleOrders[arrayAccessor];
+                    }
+                    else{
+                        ++arrayAccessor;
+                        paragraph.textContent = 
+                        exampleOrders[arrayAccessor];
+                    }
+                }
+                else if(x == -1) {
+                    if(arrayAccessor <= 0) {
+                        arrayAccessor = exampleOrders.length - 1;
+                        paragraph.textContent = 
+                        exampleOrders[arrayAccessor]
+                    }
+                    else{
+                        --arrayAccessor;
+                        paragraph.textContent = 
+                        exampleOrders[arrayAccessor]
+                    }
+                }
+            }</script></p>
+        <div id="projectThree">
+      <input type="button" id="mover" value="<" onclick="updateOrder(-1)"/> 
+      <button onclick="orderIsDone()">Finish order.</button>
+      <input type="button" id="mover" value=">" onclick="updateOrder(1)"/> 
+        </div>
+    </body>
+</html>
