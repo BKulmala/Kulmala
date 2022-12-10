@@ -1,3 +1,6 @@
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+
 function openCity(cityName, elmnt, color) {
     // Hide all elements with class="tabcontent" by default */
     var i, tabcontent, tablinks;
@@ -19,8 +22,6 @@ function openCity(cityName, elmnt, color) {
     elmnt.style.backgroundColor = color;
   }
   
-  // Get the element with id="defaultOpen" and click on it
-  document.getElementById("defaultOpen").click();
   
 function etb() {
     let sentence = document.getElementById("inputIdOne").value;
@@ -136,9 +137,27 @@ function bte() {
       else{
       }
     }
-    /** 
-     for(var i = 0;i != toBuild.length;i++) {
-    } */
     let html = toBuild.valueOf();
     output.insertAdjacentHTML("beforeend", html);
   }
+  
+function photoGallery(folder) {
+var directory;
+document.body.innerHTML = "<a href='index.html'>(Index)</a>";
+  if(folder == 1) {
+    let directory = 'Images/Nature';
+  }
+  else if(folder == 2) {
+    let directory = 'Images/Chicago';
+    document.write('Chicago!');
+  }
+  else if(folder == 3) {
+    let directory = 'Images/Cleveland';
+    document.write('Cleveland!');
+  }
+  else if(folder == 4) {
+    let directory = 'Images/Pittsburgh';
+    document.write('Pittsburgh!');
+  }
+
+}

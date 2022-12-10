@@ -13,15 +13,15 @@
     
 	<body>
     <top>
-      <img src="Images/Chicagopano-c.jpg" alt="Chicago boat tour" width="1000" height="375">
-      <img src="Images/Brandon and Liz-c.jpg" alt="Me and my girlfriend" height="375"><br>
+      <img src="Images/Chicago/Chicagopano-c.jpg" alt="Chicago boat tour" width="1000" height="375">
+      <img src="Images/etc/Brandon and Liz-c.jpg" alt="Me and my girlfriend" height="375"><br>
       Brandon Kulmala</top>
 
      <nav class="topnav" id = "navigate">
      <a class="active"href="#aboutMe">About me</a> 
      <a href="#Experience">Experience</a>
-     <a href="#Gallery">Gallery</a>
-     <a href="#Translation">Translator</a>
+     <a href="image.html">Gallery</a>
+     <a href="brainfuck.html">Translator</a>
      <a href="blog.html">Blog</a>
      </nav>
 
@@ -59,64 +59,20 @@
         </p>
       </div>
       <button class="tablink" onclick="openCity('School', this, 'fefbd8')" id="defaultOpen">School</button>
+      <script src="script.js"></script>
       <button class="tablink" onclick="openCity('CPP', this, 'fefbd8')">Programming</button>
+      <script src="script.js"></script>
       <button class="tablink" onclick="openCity('HTML', this, 'fefbd8')">Web development</button>
+      <script src="script.js"></script>
     </Experience>
-
-
-      <Gallery id="Gallery" style="display:inline-block;vertical-align: baseline;">
-          <img class="Photos" src="Images/Chicago-c.jpg" alt= "Picture of the Chicago bean" width = 40% ALIGN="Right">
-          <img class="Photos" src="Images/Cleveland-c.jpg" alt="Exhibit in the Cleveland art museum" width = 40% ALIGN="Right">
-          <img class="Photos" src="Images/Pittsburgh-c.jpg" alt="Cityscape shot in downtown Pittsburgh" width = 40% ALIGN="Right">
-          <img class="Photos" src="Images/Put-in Bay-c.jpg" alt="Summer vacation to put-in bay with my girlfriend" width = 40% ALIGN="Right">
-          <h1 class="title">Gallery <a href="#navigate">(Index)</a></h1><p>One of my favorite things to do when I'm bored is to travel!I live in a good area where 
-          going to a new city isn't too difficult to do. At most, Akron's suburbs and city are less than an hour,and at 
-          the least, I have 4 more cities less than 2 hours! I usually just go to downtown,walk a little, and then see a mall, park,
-          or library, but I still enjoy being able to go out and experience new stuff.</p>
-          <button class="button Left" onclick="plusDivs(-1)">&#10094;</button>
-          <button class="button Right" onclick="plusDivs(+1)">&#10095;</button>
-          <script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-
-  var i;
-  var x = document.getElementsByClassName("Photos");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  x[slideIndex-1].style.display = "block";
-}
-          </script></p>
-        </Gallery>
-
-     <Translation id="Translation">
-      <h1 class="title">Translator <a href="#navigate">(Index)</a></h1><p>Learning about brainf*ck, I found it as very peculiar and confusing language on the surface. I wanted to learn it, and
-          on my process learning I realized it's a very knowledgeable language that helps you perceive what a pointer does in code. This
-          translator app will show you just how odd of a language it is. Input any sentence you want, and this program will convert each
-          character's ASCII value into its representation in brainf*ck.</p>
-          <input type="text" placeholder="Type your sentence" id="inputIdOne">
-          <button type="button" onclick="etb();">Enter sentence and convert.</button>
-          <script src="script.js"></script>
-          <input type="text" placeholder="Enter your brainf*ck" id="inputIdTwo">
-          <button type="button" onclick="bte();">Enter brainf*ck and convert.</button>
-          <script src="script.js"></script>
-          <p id="Output">Your output:</p>
-        </Translation>
+          </p>
       </subjects>
 	</body>
 	<footer>
     <p>Author: Brandon Kulmala.<br>
-    <a href="mailto:servineatwork@gmail.com"><img src="Images/gmail.png"></a>
-    <a href="https://github.com/BKulmala"><img src="Images/github.png"></a>
-    <a href="https://www.linkedin.com/in/brandon-k-02a620254/"><img src="Images/linkedin.png"></a>
+    <a href="mailto:servineatwork@gmail.com"><img src="Images/etc/gmail.png"></a>
+    <a href="https://github.com/BKulmala"><img src="Images/etc/github.png"></a>
+    <a href="https://www.linkedin.com/in/brandon-k-02a620254/"><img src="Images/etc/linkedin.png"></a>
   </p>
   </footer>
 </html>
