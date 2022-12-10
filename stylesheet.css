@@ -1,14 +1,17 @@
 /*https://www.w3schools.com/cssref/default.asp*/
 html {
     scroll-behavior: smooth;
+    background-color: #fefbd8;
 }
 a {
-    width: 50px;
-    text-decoration: none;
-    color: #000000;
-  }
-body{
-    background-color: #fefbd8;
+  width: 50px;
+  text-decoration: none;
+  color: #000000;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  text-align: left;
 }
 top {
     font-family: Arial, Helvetica, sans-serif;
@@ -18,16 +21,9 @@ top {
     background-color: #2317aa;
     color: #E3DCD2;
 }
-nav {
-    background-color: #4237bc;
-    font-family: Arial, Helvetica, sans-serif;
-    display: block;
-    font-size: 75px;
-    color: #E3DCD2;
-    text-align: center;
-}
-.Experience {
-    background-color:#4237bc;
+h1.title {
+  font-style:italic;
+  border-style: none none solid none;
 }
 /* Style the tab buttons */
 .tablink {
@@ -40,63 +36,39 @@ nav {
     padding: 14px 16px;
     font-size: 17px;
     width: 33.33%;
-  }
-  
+}
   /* Change background color of buttons on hover */
-  .tablink:hover {
+.tablink:hover {
     background-color: #fefbd8;
-  }
-  
+}
   /* Set default styles for tab content */
-  .tabcontent {
+.tabcontent {
     color: rgb(0, 0, 0);
     display: none;
     padding: 50px;
     text-align: center;
-
-  }
-  
-  /* Style each tab content individually */
-  #School {background-color:#fefbd8;}
-  #CPP {background-color:#fefbd8;}
-  #HTML {background-color:#fefbd8;}
-
-  .topnav {
+}
+.topnav {
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    font-size: 75px;
+    color: #E3DCD2;
+    text-align: center;
     background-color: #4237bc;
     overflow: hidden;
-  }
-  
-
-  .topnav a {
+}
+.topnav a {
     float: center;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     font-size: 17px;
-  }
-  
-
-  .topnav a:hover {
+}
+.topnav a:hover {
     background-color: #ddd;
     color: black;
-  }
-  
-
-  .topnav a.active {
-    background-color: #000000;
-    color: white;
-  }
-p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 32px;
-    text-align: left;
-}
-h1.title {
-  font-style:italic;
-  border-style: none none solid none;
 }
 .subjects {
-
   font-family: Arial, Helvetica, sans-serif;
     font-size: 32px;
     text-align: left;
@@ -109,22 +81,19 @@ h1.title {
     justify-content: center;
     height: 100%;
     font-size: 5em;
-  }
-
-
-  .Row {
+}
+.Row {
     display: flex;
-  }
-  
-  .Column {
+}
+.Column {
     flex: 33.33%;
     padding: 5px;
-  }
-  .Row::img {
+}
+.Row::img {
     width: 0px;
     height: 0px;
-  }
-  .picture {
+}
+.picture {
     height: 25%;
     width: 25%;
-  }
+}
