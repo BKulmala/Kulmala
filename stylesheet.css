@@ -8,6 +8,7 @@ html {
 body {
     width:100.8%;
     overflow-x:hidden;
+    background-color: #120a3d;
 }
 a {
   color: #3fca56;
@@ -25,7 +26,7 @@ h1.title {
 }
 /* Style the tab buttons */
 .tablink {
-    background-color: #120a3d;
+    background-color: #412854;
     color:#4cc35b;
     float: left;
     border: none;
@@ -37,7 +38,7 @@ h1.title {
 }
   /* Change background color of buttons on hover */
 .tablink:hover {
-    background-color: #412854;
+    background-color: #603c7c;
 }
   /* Set default styles for tab content */
 .tabcontent {
@@ -96,13 +97,22 @@ h1.title {
     border-radius: 20%;
 }
 #aboutMe {
-    padding-bottom:300px;
+    margin-bottom:300px;
+    border: 2px solid #4cc35b;
+    border-radius: 15px;
+    background-color:#15140c;
 }
 #Experience {
-    padding-bottom:300px;
+    margin-bottom:300px;
+    border: 2px solid #4cc35b;
+    border-radius: 15px;
+    background-color:#15140c;
 }
 #Contact {
+    border: 2px solid #4cc35b;
+    border-radius: 15px;
     display:inline-grid;
     grid-template-columns: auto auto;
     text-align:left;
+    background-color:#15140c;
 }
