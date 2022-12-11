@@ -130,7 +130,12 @@ function bte() {
         ++endOf;
       }
     }
-  let html = toBuild.valueOf();
+  for(var i = 0;i <= toBuild.length;i++) {
+    if(toBuild[i] == 0) {
+      toBuild.splice(i,1);
+    }
+  }
+  let html = toBuild;
   output.insertAdjacentHTML("beforeend", html);
 }
 function photoGallery(folder) {
