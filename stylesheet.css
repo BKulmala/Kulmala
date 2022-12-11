@@ -1,35 +1,36 @@
 /*https://www.w3schools.com/cssref/default.asp*/
 html {
     scroll-behavior: smooth;
-    background-color: #fefbd8;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #15140c;
+    color: #3fca56;
+}
+body {
+    width:100.9%;
+    overflow-x:hidden;
 }
 a {
   width: 50px;
   text-decoration: none;
-  color: #000000;
 }
 p {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 32px;
   text-align: left;
 }
-top {
-    font-family: Arial, Helvetica, sans-serif;
+.myProfile {
     display: block;
-    font-size: 75px;
-    text-align: center;
+    font-size: 0px;
     background-color: #2317aa;
     color: #E3DCD2;
 }
+
 h1.title {
-  font-family: Arial, Helvetica, sans-serif;
   font-style:italic;
   border-style: none none solid none;
 }
 /* Style the tab buttons */
 .tablink {
-    background-color: #f7f6e6;
-    color: rgb(0, 0, 0);
+    background-color: #15140c;
     float: left;
     border: none;
     outline: none;
@@ -44,19 +45,17 @@ h1.title {
 }
   /* Set default styles for tab content */
 .tabcontent {
-    color: rgb(0, 0, 0);
     display: none;
     padding: 50px;
     text-align: center;
 }
 .topnav {
-    font-family: Arial, Helvetica, sans-serif;
-    display: block;
-    font-size: 75px;
-    color: #E3DCD2;
-    text-align: center;
-    background-color: #4237bc;
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
     overflow: hidden;
+    background-color: #4237bc;
+    text-align: center;
 }
 .topnav a {
     float: center;
@@ -66,22 +65,13 @@ h1.title {
     font-size: 17px;
 }
 .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color:
 }
 .subjects {
-  font-family: Arial, Helvetica, sans-serif;
     font-size: 32px;
     text-align: left;
     overflow-y: scroll;
     scroll-behavior: smooth;
-}
-.scroll-page {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    font-size: 5em;
 }
 .Row {
     display: flex;
@@ -89,10 +79,6 @@ h1.title {
 .Column {
     flex: 33.33%;
     padding: 5px;
-}
-.Row::img {
-    width: 0px;
-    height: 0px;
 }
 .picture {
     height: 25%;
