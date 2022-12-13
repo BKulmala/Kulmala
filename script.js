@@ -130,13 +130,13 @@ function bte() {
         ++endOf;
       }
     }
-  for(var i = 0;i <= toBuild.length;i++) {
-    if(toBuild[i] == 0) {
-      toBuild.splice(i,1);
-    }
+  for(var i = 0;i <= toBuild.length - 1;i++) {
+    if(toBuild[i] != 0) {
+    let html = toBuild[i] + ' ';
+    output.insertAdjacentHTML("beforeend", html);
   }
-  let html = toBuild;
-  output.insertAdjacentHTML("beforeend", html);
+  }
+
 }
 function photoGallery(folder) {
   var directory;
