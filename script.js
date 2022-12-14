@@ -17,6 +17,21 @@ function openCity(cityName, elmnt, color) {
   // Show the specific tab content
   document.getElementById(cityName).style.display = "block";
   
+  if(cityName == "HTML") {
+    document.getElementById("HTMLBtn").style.width = "50%";
+    document.getElementById("SchoolBtn").style.width = "25%";
+    document.getElementById("CPPBtn").style.width = "25%";
+  }
+  else if(cityName == "CPP") {
+    document.getElementById("HTMLBtn").style.width = "25%";
+    document.getElementById("SchoolBtn").style.width = "25%";
+    document.getElementById("CPPBtn").style.width = "50%";
+  }
+  else if(cityName == "School"){
+    document.getElementById("HTMLBtn").style.width = "25%";
+    document.getElementById("SchoolBtn").style.width = "50%";
+    document.getElementById("CPPBtn").style.width = "25%";
+  }
   // Add the specific color to the button used to open the tab content
   elmnt.style.backgroundColor = color;
 }
