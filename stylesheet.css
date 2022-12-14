@@ -77,6 +77,13 @@ h1.title {
     flex: 33.33%;
     padding: 5px;
 }
+.grow { 
+    transition: all .2s ease-in-out; 
+    }
+    
+    .grow:hover { 
+    transform: scale(1.1); 
+    }
 .picture {
     height: 25%;
     width: 25%;
@@ -115,4 +122,7 @@ h1.title {
     grid-template-columns: auto auto;
     text-align:left;
     background-color:#15140c;
+}
+.folder {
+
 }
