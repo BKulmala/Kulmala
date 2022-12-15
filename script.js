@@ -1,5 +1,12 @@
-    // Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen").click();
+
+function toggleTheme() {
+    // Default to light theme, since that is starting theme
+    window.theme = typeof(window.theme)==='string' ? window.theme : 'dark';
+    var switchToTheme = window.theme === 'light' ? 'dark' : 'light';
+    window.theme = switchToTheme;
+    document.querySelector('body').setAttribute('data-theme',switchToTheme);
+    console.log("Switch successful.");
+    }
 function openCity(cityName, elmnt, color) {
   // Hide all elements with class="tabcontent" by default */
   var i, tabcontent, tablinks;
@@ -171,4 +178,8 @@ function photoGallery(folder) {
     let directory = 'Images/Pittsburgh';
     document.write('Pittsburgh!');
   }
+}
+function lightToggle() {
+  var element = document.body;
+  element.classList.toggle("light-mode");
 }

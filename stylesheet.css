@@ -2,41 +2,42 @@
 html {
     scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #15140c;
+    background-color: #EDF5E1;
+    color: #379683;
+}
+.light-mode {
+    background-color: #120a3d;
     color: #3fca56;
 }
 body {
     overflow-x:hidden;
-    background-color: #120a3d;
 }
 a {
-  color: #3fca56;
-  width: 50px;
-  text-decoration: none;
+    width: 50px;
+    text-decoration: none;
+    color: #3fca56;
 }
 p {
   font-size: 32px;
   text-align: left;
 }
-
 h1.title {
   font-style:italic;
   border-style: none none solid none;
 }
 /* Style the tab buttons */
 .tablink {
-    background-color: #412854;
-    color:#4cc35b;
     float: left;
     cursor: pointer;
     padding:10px 10px;
     font-size: 17px;
     width: 33.3%;
     transition: 1.5s;
+    background-color: #412854;
+    color: #3fca56;
 }
 .tablink:hover {
     background-color: #684285;
-    color:#4cc35b;
 }
   /* Set default styles for tab content */
 .tabcontent {
@@ -49,12 +50,10 @@ h1.title {
     margin: 0;
     padding: 20px;
     overflow: hidden;
-    background-color: #120a3d;
     text-align: center;
 }
 .topnav a {
     float: center;
-    color: #4cc35b;
     text-align: center;
     padding: 14px 16px;
     font-size: 17px;
@@ -90,8 +89,6 @@ h1.title {
     display:grid;
     text-align:left;
     grid-template-columns:auto auto;
-    background-color: #120a3d;
-    color: #4cc35b;
     padding-bottom:150px;
     padding-top:150px;
     }
@@ -129,4 +126,46 @@ h1.title {
 }
 .LinkedInIcon {
     border-radius:5%;
+}
+.theme-switcher {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+input {
+    width: 0;
+    height: 0;
+    display: none;
+    visibility: hidden;
+}
+label {
+    cursor: pointer;
+    display: block;
+    text-indent: -9999px;
+    height: 30px;
+    width: 60px;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s ease background-color;
+}
+label::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    background-color: rgb(46, 42, 68);
+    transition: 0.5s ease;
+}
+input:checked + label::after {
+    /* left: calc(100% - 2.5px); */
+    left: calc(100% - 25px);
+    background-color: aliceblue;
+}
+input:checked + label {
+    background-color: rgb(25, 26, 37);
+    border: 2px solid whitesmoke;
 }

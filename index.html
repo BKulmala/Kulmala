@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">  
   </head>
     
-	<body>
+	<body class="light-mode">
     <nav class="topnav"id="navigate">
       <a href="#aboutMe">About me</a> 
       <a href="#Experience">Experience</a>
@@ -18,9 +18,10 @@
       <a href="brainfuck.html">Translator</a>
       <a href="blog.html">Blog</a>
       <a href="#Contact">Contact</a>
+      <button onclick="lightToggle();">toggle mode</button>
     </nav>
 
-    <div id="myProfile">
+    <div id="myProfile" data-theme="dark">
       <img id="myFace"src="Images/etc/Brandon and Liz-c.jpg" alt="Me and my girlfriend" height="375"></img>
       <p id="myName">Brandon Kulmala</br>
       <img src="Images/icons/HtmlCssJsicon.png"alt="HTML+CSS+JS" height="90">
@@ -85,11 +86,6 @@
 
       </div>
     </subjects>
-
+    <p>Author: Brandon Kulmala.</p>
 	</body>
-  
-	<footer>
-    <p>Author: Brandon Kulmala.
-  </p>
-  </footer>
-</html>
+  </html>
