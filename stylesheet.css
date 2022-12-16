@@ -13,7 +13,11 @@ html {
     background-color: var(--LayerZeroColorDk);
     color: var(--textColorDk);
 }
-.light-mode, a{
+.light-mode a{
+    background-color: var(--LayerZeroColorLi);
+    color: var(--textColorLi);
+}
+.light-mode{
     background-color: var(--LayerZeroColorLi);
     color: var(--textColorLi);
 }
