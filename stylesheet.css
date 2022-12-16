@@ -1,13 +1,21 @@
 /*https://www.w3schools.com/cssref/default.asp*/
+:root {
+    --LayerZeroColorDk:#120a3d;
+    --LayerZeroColorLi:#EDF5E1;
+    --LayerTwoColorDk:#412854;
+    --LayerTwoColorLi: ;
+    --textColorDk: #3fca56;
+    --textColorLi: #379683;
+}
 html {
     scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #EDF5E1;
-    color: #379683;
+    background-color: var(--LayerZeroColorDk);
+    color: var(--textColorDk);
 }
-.light-mode {
-    background-color: #120a3d;
-    color: #3fca56;
+.light-mode, a{
+    background-color: var(--LayerZeroColorLi);
+    color: var(--textColorLi);
 }
 body {
     overflow-x:hidden;
@@ -15,7 +23,7 @@ body {
 a {
     width: 50px;
     text-decoration: none;
-    color: #3fca56;
+    color: var(--textColorDk);
 }
 p {
   font-size: 32px;
@@ -34,7 +42,7 @@ h1.title {
     width: 33.3%;
     transition: 1.5s;
     background-color: #412854;
-    color: #3fca56;
+    color: var(--textColorDk);
 }
 .tablink:hover {
     background-color: #684285;
@@ -137,35 +145,4 @@ input {
     height: 0;
     display: none;
     visibility: hidden;
-}
-label {
-    cursor: pointer;
-    display: block;
-    text-indent: -9999px;
-    height: 30px;
-    width: 60px;
-    border-radius: 50px;
-    background-color: rgb(255, 255, 255);
-    transition: 0.5s ease background-color;
-}
-label::after {
-    position: absolute;
-    content: "";
-    width: 20px;
-    height: 20px;
-    border-radius: 50px;
-    top: 50%;
-    left: 5px;
-    transform: translateY(-50%);
-    background-color: rgb(46, 42, 68);
-    transition: 0.5s ease;
-}
-input:checked + label::after {
-    /* left: calc(100% - 2.5px); */
-    left: calc(100% - 25px);
-    background-color: aliceblue;
-}
-input:checked + label {
-    background-color: rgb(25, 26, 37);
-    border: 2px solid whitesmoke;
 }
