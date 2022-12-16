@@ -2,8 +2,12 @@
 :root {
     --LayerZeroColorDk:#120a3d;
     --LayerZeroColorLi:#EDF5E1;
+    --LayerOneColorDk:#15140c;
+    --LayerOneColorLi:#62c2c2;
     --LayerTwoColorDk:#412854;
-    --LayerTwoColorLi: ;
+    --LayerTwoColorLi:#b7cc98;
+    --LayerTwoCoHoLi:#909786;
+    --LayerTwoCoHoDk:#684285;
     --textColorDk: #3fca56;
     --textColorLi: #379683;
 }
@@ -13,11 +17,7 @@ html {
     background-color: var(--LayerZeroColorDk);
     color: var(--textColorDk);
 }
-.light-mode a{
-    background-color: var(--LayerZeroColorLi);
-    color: var(--textColorLi);
-}
-.light-mode{
+.light-mode, .light-mode a{
     background-color: var(--LayerZeroColorLi);
     color: var(--textColorLi);
 }
@@ -50,6 +50,12 @@ h1.title {
 }
 .tablink:hover {
     background-color: #684285;
+}
+.light-mode .tablink {
+    background-color: var(--LayerTwoColorLi);
+}
+.light-mode .tablink:hover {
+    background-color: #f00f00;
 }
   /* Set default styles for tab content */
 .tabcontent {
@@ -110,17 +116,14 @@ h1.title {
 #myFace {
     border-radius: 20%;
 }
-#aboutMe {
+#aboutMe, #Experience {
     margin-bottom:300px;
     border: 2px solid #4cc35b;
     border-radius: 15px;
-    background-color:#15140c;
+    background-color:var(--LayerOneColorDk);
 }
-#Experience {
-    margin-bottom:300px;
-    border: 2px solid #4cc35b;
-    border-radius: 15px;
-    background-color:#15140c;
+.light-mode #aboutMe,.light-mode #Experience {
+    background-color:var(--LayerOneColorLi);
 }
 #Contact {
     border: 2px solid #4cc35b;
@@ -128,7 +131,7 @@ h1.title {
     display:inline-grid;
     grid-template-columns: auto auto;
     text-align:left;
-    background-color:#15140c;
+    background-color:var(--LayerOneColorDk);
 }
 .GithubIcon {
     border-radius:100%;
@@ -138,15 +141,4 @@ h1.title {
 }
 .LinkedInIcon {
     border-radius:5%;
-}
-.theme-switcher {
-    position: absolute;
-    right: 30px;
-    top: 10px;
-}
-input {
-    width: 0;
-    height: 0;
-    display: none;
-    visibility: hidden;
 }
