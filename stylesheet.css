@@ -1,15 +1,15 @@
 /*https://www.w3schools.com/cssref/default.asp*/
 :root {
     --LayerZeroColorDk:#120a3d;
-    --LayerZeroColorLi:#EDF5E1;
+    --LayerZeroColorLi:#fafafa;
     --LayerOneColorDk:#15140c;
-    --LayerOneColorLi:#62c2c2;
+    --LayerOneColorLi:#e4e5f1;
     --LayerTwoColorDk:#412854;
-    --LayerTwoColorLi:#b7cc98;
-    --LayerTwoCoHoLi:#909786;
+    --LayerTwoColorLi:#d2d3db;
+    --LayerTwoCoHoLi:#9394a5;
     --LayerTwoCoHoDk:#684285;
     --textColorDk: #3fca56;
-    --textColorLi: #379683;
+    --textColorLi: #484b6a;
 }
 html {
     scroll-behavior: smooth;
@@ -18,7 +18,7 @@ html {
     color: var(--textColorDk);
 }
 .light-mode, .light-mode a{
-    background-color: var(--LayerZeroColorLi);
+    background-color: var(--LayerOneColorLi);
     color: var(--textColorLi);
 }
 body {
@@ -45,17 +45,18 @@ h1.title {
     font-size: 17px;
     width: 33.3%;
     transition: 1.5s;
-    background-color: #412854;
+    background-color: var(--LayerTwoColorDk);
     color: var(--textColorDk);
 }
 .tablink:hover {
-    background-color: #684285;
+    background-color: var(--LayerTwoCoHoDk);
 }
 .light-mode .tablink {
     background-color: var(--LayerTwoColorLi);
+    color: var(--textColorLi);
 }
 .light-mode .tablink:hover {
-    background-color: #f00f00;
+    background-color: var(--LayerTwoCoHoLi);
 }
   /* Set default styles for tab content */
 .tabcontent {
@@ -77,7 +78,7 @@ h1.title {
     font-size: 17px;
 }
 .topnav a:hover {
-    background-color: #412854;
+    background-color: var(--LayerTwoColorDk);
 }
 .subjects {
     font-size: 32px;
@@ -118,15 +119,16 @@ h1.title {
 }
 #aboutMe, #Experience {
     margin-bottom:300px;
-    border: 2px solid #4cc35b;
+    border: 2px solid var(--textColorDk);
     border-radius: 15px;
     background-color:var(--LayerOneColorDk);
 }
-.light-mode #aboutMe,.light-mode #Experience {
+.light-mode #aboutMe,.light-mode #Experience, .light-mode #Contact {
     background-color:var(--LayerOneColorLi);
+    border: 2px solid var(--textColorLi);
 }
 #Contact {
-    border: 2px solid #4cc35b;
+    border: 2px solid var(--textColorDk);
     border-radius: 15px;
     display:inline-grid;
     grid-template-columns: auto auto;
