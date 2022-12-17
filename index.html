@@ -4,22 +4,29 @@
   <head>
     <script src="script.js"></script>
     <link rel="stylesheet" href="stylesheet.css">
-    <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/icons/favicon.ico" type="image/x-icon">
     <title>Brandon Kulmala</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">  
   </head>
     
 	<body>
-    <nav class="topnav"id="navigate">
-      <a href="#aboutMe">About me</a> 
-      <a href="#Experience">Experience</a>
-      <a href="image.html">Gallery</a>
-      <a href="brainfuck.html">Translator</a>
-      <a href="blog.html">Blog</a>
-      <a href="#Contact">Contact</a>
-      <button onclick="lightToggle();">toggle Dark/Light mode</button>
-    </nav>
+    <script>lightToggle();</script>
+      <ul class="topnav"id="navigate">
+        <li><a href="#aboutMe">About me</a></li>
+        <li><a href="#Experience">Experience</a></li>
+        <li><a href="image.html">Gallery</a></li>
+        <li><table>
+        <tr><th class="projHeader">Projects</th></tr>
+        <tr><th class="projList"><a href="brainfuck.html">Translator</a></th></tr>
+        <tr><th class="projList"><a href="https://github.com/BKulmala/projects/tree/main/Quizlet">Quizlet</a></th></tr>
+        <tr><th class="projList"><a href="https://github.com/BKulmala/projects/tree/main/database">Database</a></th></tr>
+        </table>
+        </li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        <li><button onclick="lightToggle();">toggle Dark/Light mode</button></li>
+      </ul>
 
     <div id="myProfile" data-theme="dark">
       <img id="myFace"src="Images/etc/Brandon and Liz-c.jpg" alt="Me and my girlfriend" height="375"></img>
@@ -73,8 +80,8 @@
         </div>
       <div id="Contact">
         <h1 class="title">Contact me<a href="#navigate">(Index)</a></h1></br>
-        <a href="mailto:servineatwork@gmail.com"><img
-          class="GmailIcon" src="Images/etc/gmail.png" alt="Gmail"></a>
+        <img class="GmailIcon" src="Images/etc/gmail.png" alt="Gmail" onclick="Email();"></a>
+        <script>function Email() {alert('bjk74@uakron.edu');}</script>
         <p>Send me an email.</p>
 
         <a  href="https://github.com/BKulmala"><img class="GithubIcon" src="Images/etc/github.png" alt="Github"></a>

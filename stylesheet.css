@@ -64,12 +64,12 @@ h1.title {
     padding: 50px;
     text-align: center;
 }
-.topnav {
-    list-style-type: none;
-    margin: 0;
-    padding: 20px;
-    overflow: hidden;
-    text-align: center;
+ul.topnav li, table{
+display:inline;
+text-align:center;
+}
+ul.topnav {
+text-align: center;
 }
 .topnav a {
     float: center;
@@ -79,6 +79,9 @@ h1.title {
 }
 .topnav a:hover {
     background-color: var(--LayerTwoColorDk);
+}
+.light-mode .topnav a:hover {
+    background-color: var(--LayerTwoCoHoLi);
 }
 .subjects {
     font-size: 32px;

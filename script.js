@@ -182,6 +182,4 @@ function photoGallery(folder) {
 function lightToggle() {
   var element = document.documentElement;
   element.classList.toggle("light-mode");
-  var anchor = document.anchors;
-  anchor.classList.toggle("light-mode");
 }
