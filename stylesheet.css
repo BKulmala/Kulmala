@@ -68,6 +68,9 @@ ul.topnav li, table{
 display:inline;
 text-align:center;
 }
+.projList {
+    padding:15px;
+}
 ul.topnav {
 text-align: center;
 }
