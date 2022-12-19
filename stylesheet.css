@@ -69,8 +69,20 @@ display:inline;
 text-align:center;
 }
 .projList {
-    padding:15px;
+    display:none;
+    padding-top:15px;
 }
+.projHeader {
+    padding-top:15px;
+}
+.projHeader:hover ~ .projList{
+    display:grid;
+    color: var(--textColorDk);
+}
+.projList:hover{
+    display:grid;
+}
+
 ul.topnav {
 text-align: center;
 }
