@@ -12,22 +12,23 @@
     
 	<body>
     <script>lightToggle();</script>
-      <ul class="topnav"id="navigate">
-        <li><a href="#aboutMe">About me</a></li>
-        <li><a href="#Experience">Experience</a></li>
-        <li><a href="image.html">Gallery</a></li>
-        <li><table>
-        <tr class="projHeader"><th>Projects</th></tr>
-        <tr class="projList"><th><a href="brainfuck.html">Translator</a></th></tr>
-        <tr class="projList"><th><a href="https://github.com/BKulmala/projects/tree/main/Quizlet">Quizlet</a></th></tr>
-        <tr class="projList"><th><a href="https://github.com/BKulmala/projects/tree/main/database">Database</a></th></tr>
-        </table>
-        </li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="#Contact">Contact</a></li>
-        <li><button onclick="lightToggle();">toggle Dark/Light mode</button></li>
-      </ul>
-
+      
+        <div class="navbar">
+        <a href="#aboutMe">About me</a>
+        <a href="#Experience">Experience</a>
+        <a href="image.html">Gallery</a>
+          <div class="dropdown">
+            <button class="dropbtn">Projects</button>
+            <div class="dropdown-content">
+        <a href="brainfuck.html">Translator</a></th></tr>
+        <a href="https://github.com/BKulmala/projects/tree/main/Quizlet">Quizlet</a></th></tr>
+        <a href="https://github.com/BKulmala/projects/tree/main/database">Database</a></th></tr>
+      </div>    
+      </div>
+        <a href="blog.html">Blog</a></li>
+        <a href="#Contact">Contact</a></li>
+        <button onclick="lightToggle();">toggle Dark/Light mode</button></li>
+      </div>
     <div id="myProfile" data-theme="dark">
       <img id="myFace"src="Images/etc/Brandon and Liz-c.jpg" alt="Me and my girlfriend" height="375"></img>
       <p id="myName">Brandon Kulmala</br>
