@@ -141,15 +141,19 @@ h1.title {
 /* Links inside the navbar */
 .navbar a {
     float: center;
-    margin-right:109px;
+    margin-right:5%;
     text-align: center;
-
 }
-
+.navbar a:hover {
+    background-color: var(--LayerTwoCoHoDk);
+}
+.light-mode .navbar a:hover {
+    background-color: var(--LayerTwoCoHoLi);
+}
 /* The dropdown container */
 .dropdown {
     display: inline-block;
-    margin-right:80px;
+    margin-right:5%;
   float: none;
   overflow: hidden;
 }
