@@ -64,40 +64,7 @@ h1.title {
     padding: 50px;
     text-align: center;
 }
-ul.topnav li, table{
-display:inline;
-text-align:center;
-}
-.projList {
-    display:none;
-    padding-top:15px;
-}
-.projHeader {
-    padding-top:15px;
-}
-.projHeader:hover ~ .projList{
-    display:grid;
-    color: var(--textColorDk);
-}
-.projList:hover{
-    display:grid;
-}
 
-ul.topnav {
-text-align: center;
-}
-.topnav a {
-    float: center;
-    text-align: center;
-    padding: 14px 16px;
-    font-size: 17px;
-}
-.topnav a:hover {
-    background-color: var(--LayerTwoColorDk);
-}
-.light-mode .topnav a:hover {
-    background-color: var(--LayerTwoCoHoLi);
-}
 .subjects {
     font-size: 32px;
     text-align: left;
@@ -167,19 +134,22 @@ text-align: center;
   overflow: hidden;
   text-align: center;
   font-family: Arial;
+  padding: 14px 16px;
+  font-size: 17px;
 }
 
 /* Links inside the navbar */
 .navbar a {
     float: center;
+    margin-right:109px;
     text-align: center;
-    padding: 14px 16px;
-    font-size: 17px;
+
 }
 
 /* The dropdown container */
 .dropdown {
     display: inline-block;
+    margin-right:80px;
   float: none;
   overflow: hidden;
 }
@@ -193,31 +163,27 @@ text-align: center;
   border: none;
   outline: none;
   color: var(--textColorDk);
-  padding: 14px 16px;
   background-color: inherit;
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
-}
-
-/* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
-
 }
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: var(--LayerTwoColorDk);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-
+.light-mode .dropdown-content {
+    
+    background-color: var(--LayerOneColorLi);
+}
 /* Links inside the dropdown */
 .dropdown-content a {
   float: none;
-  color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -226,9 +192,11 @@ text-align: center;
 
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #ddd;
+    background-color:var(--LayerTwoCohoDk);
 }
-
+.light-mode .dropdown-content a:hover {
+    background-color:var(--LayerTwoCoHoLi);
+}
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
