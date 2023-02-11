@@ -1,0 +1,19 @@
+/*https://www.w3schools.com/cssref/default.asp*/
+:root {
+    --LayerZeroColorDk:#120a3d;
+    --LayerZeroColorLi:#fafafa;
+    --LayerOneColorDk:#15140c;
+    --LayerOneColorLi:#e4e5f1;
+    --LayerTwoColorDk:#412854;
+    --LayerTwoColorLi:#d2d3db;
+    --LayerTwoCoHoLi:#9394a5;
+    --LayerTwoCoHoDk:#684285;
+    --textColorDk: #3fca56;
+    --textColorLi: #484b6a;
+}
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white
+}
