@@ -192,7 +192,7 @@ h1.title {
 
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
-    background-color:var(--LayerTwoCohoDk);
+    background-color:var(--LayerTwoCoHoDk);
 }
 .light-mode .dropdown-content a:hover {
     background-color:var(--LayerTwoCoHoLi);
