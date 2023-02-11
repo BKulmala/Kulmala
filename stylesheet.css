@@ -91,7 +91,6 @@ h1.title {
 }
 #myProfile {
     display:grid;
-    text-align:left;
     grid-template-columns:auto auto;
     padding-bottom:150px;
     padding-top:150px;
@@ -100,6 +99,7 @@ h1.title {
     font-size:90px;
 }
 #myFace {
+    margin:auto;
     border-radius: 20%;
 }
 #aboutMe, #Experience {
