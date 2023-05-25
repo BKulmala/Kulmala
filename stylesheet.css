@@ -144,6 +144,7 @@ h1.title {
     float: center;
     margin-right:5%;
     text-align: center;
+    border-right-width: 500px;
 }
 .navbar a:hover {
     background-color: var(--LayerTwoCoHoDk);
@@ -153,16 +154,17 @@ h1.title {
 }
 /* The dropdown container */
 .dropdown {
-    display: inline-block;
+    display: inline-flex;
     margin-right:5%;
-  float: none;
-  overflow: hidden;
+    margin-top:5px;
+    overflow: hidden;
 }
 
 /* Dropdown button */
 .light-mode .dropdown .dropbtn {
     color: var(--textColorLi);
 }
+
 .dropdown .dropbtn {
   font-size: 16px;
   border: none;
