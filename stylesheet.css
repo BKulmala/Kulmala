@@ -90,8 +90,9 @@ h1.title {
     width: 25%;
 }
 #myProfile {
-    display:grid;
-    grid-template-columns:auto auto;
+    display:flex;
+    position:inherit;
+    width:0px;
     padding-bottom:150px;
     padding-top:150px;
     }
