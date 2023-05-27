@@ -11,10 +11,18 @@
   </head>
     
 <body><script>lightToggle();</script>
-    <h1 class="title">Translator <a href="index.html">(Index)</a></h1><p>Learning about brainf*ck, I found it as very peculiar and confusing language on the surface. I wanted to learn it, and
-        on my process learning I realized it's a very knowledgeable language that helps you perceive what a pointer does in code. This
-        translator app will show you just how odd of a language it is. Input any sentence you want, and this program will convert each
-        character's ASCII value into its representation in brainf*ck.</p>
+    <h1 class="title">Translator <a href="index.html">(Index)</a></h1><p>Stumbling upon this esoteric language called brainfuck on youtube, I
+      found it very interesting, so I learned it to understand it's process. The core concepts of this language is easy.
+      you are working on a stack, and you are given only a few things to work with</br>
+      +=Add one</br>
+      -=Subtract one</br>
+      >=Move to the left one</br>
+      <=Move to the right one</br>
+      []=Loop until the leftmost cell is zero.</br>
+      .=Display block of manipulated cells</br>
+      ,=Accept user input, store into cell</br>
+      This translator works with all these elements to output your english sentence into a brainfuck sentence.
+    </p>
         <input type="text" placeholder="Type your sentence" id="inputIdOne">
         <button type="button" onclick="etb();">Enter sentence and convert.</button>
         <script src="script.js"></script>
