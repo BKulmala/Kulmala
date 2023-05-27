@@ -154,7 +154,6 @@ h1.title {
 .dropdown {
     display: inline-block;
     margin-right:5%;
-  float: none;
   overflow: hidden;
 }
 
@@ -197,6 +196,7 @@ h1.title {
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
     background-color:var(--LayerTwoCoHoDk);
+    padding-right:95px;
 }
 .light-mode .dropdown-content a:hover {
     background-color:var(--LayerTwoCoHoLi);
