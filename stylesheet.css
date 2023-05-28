@@ -222,3 +222,8 @@ border-radius: 10%;
     border: 5px solid;
     border-radius: 10%;
 }
+
+.returnHome {
+    background-color: #412854;
+    width:3%;
+}
