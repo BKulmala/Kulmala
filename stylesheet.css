@@ -178,10 +178,11 @@ h1.title {
 /* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
+  width:300px;
   position: absolute;
   background-color: var(--LayerTwoColorDk);
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 32px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 .light-mode .dropdown-content {
@@ -190,6 +191,8 @@ h1.title {
 }
 /* Links inside the dropdown */
 .dropdown-content a {
+    
+  width:300px;
   float: none;
   padding: 12px 16px;
   text-decoration: none;
@@ -200,6 +203,7 @@ h1.title {
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
     background-color:var(--LayerTwoCoHoDk);
+    padding-right:95px;
 }
 .light-mode .dropdown-content a:hover {
     background-color:var(--LayerTwoCoHoLi);
@@ -207,4 +211,19 @@ h1.title {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.PCImage {
+border: 5px solid;
+border-radius: 10%;
+}
+
+.WebImage {
+    border: 5px solid;
+    border-radius: 10%;
+}
+
+.returnHome {
+    background-color: #412854;
+    width:3%;
 }
