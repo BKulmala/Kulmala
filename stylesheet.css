@@ -89,13 +89,6 @@ h1.title {
     height: 25%;
     width: 25%;
 }
-#myProfile {
-    display:flex;
-    position:inherit;
-    width:0px;
-    padding-bottom:25%;
-    padding-top:10%;
-    }
 #myName {
     font-size:90px;
 }
@@ -226,3 +219,44 @@ border-radius: 10%;
     background-color: #412854;
     width:3%;
 }
+
+.carousel {
+    position: relative;
+}
+
+.carouselItem {
+    height: 300px;
+    padding:1em;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    display: none;
+}
+
+.carouselItem--selected {
+    display: block;
+  }
+  
+  .carousel__nav {
+    width: 100%;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+  }
+  
+  .carouselButton {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .carouselButton--selected {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  

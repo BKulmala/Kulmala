@@ -183,3 +183,39 @@ function lightToggle() {
   var element = document.documentElement;
   element.classList.toggle("light-mode");
 }
+document.querySelectorAll(".carousel").forEach((carousel) => {
+  const items = carousel.querySelectorAll(".carouselItem");
+  const buttonsHtml = Array.from(items, () => {
+    return `<span class="carouselButton"></span>`;
+  });
+
+  carousel.insertAdjacentHTML(
+    "beforeend",
+    `
+		<div class="carousel__nav">
+			${buttonsHtml.join("")}
+		</div>
+	`
+  );
+
+  const buttons = carousel.querySelectorAll(".carouselButton");
+
+  buttons.forEach((button, i) => {
+    button.addEventListener("click", () => {
+      // un-select all the items
+      items.forEach((item) =>
+        item.classList.remove("carouselItem--selected")
+      );
+      buttons.forEach((button) =>
+        button.classList.remove("carouselButton--selected")
+      );
+
+      items[i].classList.add("carouselItem--selected");
+      button.classList.add("carouselButton--selected");
+    });
+  });
+
+  // Select the first item on page load
+  items[0].classList.add("carouselItem--selected");
+  buttons[0].classList.add("carouselButton--selected");
+});
