@@ -218,6 +218,7 @@ border-radius: 10%;
 .returnHome {
     background-color: #412854;
     width:3%;
+    border-radius:10%;
 }
 
 .carousel {
@@ -225,7 +226,9 @@ border-radius: 10%;
 }
 
 .carouselItem {
-    height: 300px;
+    position:relative;
+    margin-top:10%;
+    margin-bottom:10%;
     padding:1em;
     font-family: "Quicksand", sans-serif;
     font-weight: bold;
@@ -259,4 +262,17 @@ border-radius: 10%;
   .carouselButton--selected {
     background: rgba(255, 255, 255, 0.5);
   }
-  
+
+  .light-mode .carouselButton {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: rgb(0, 0, 0);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  .light-mode .carouselButton--selected {
+    background: rgb(218, 218, 218);
+  }
